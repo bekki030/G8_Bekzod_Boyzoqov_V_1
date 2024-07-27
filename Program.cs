@@ -287,6 +287,7 @@ namespace Modul_2
                         break;
                     case "2":
                         Console.WriteLine("Admin");
+                        center.GetMenu();
                         Console.ReadKey();
                         Console.Clear();
                         break;
@@ -320,6 +321,69 @@ namespace Modul_2
                 Console.Write("Tanlang: ");
                 var choice = Console.ReadLine();
                 Console.Clear();
+
+                switch (choice)
+                {
+                    case "1":
+                        bool back1 = false;
+                        while (!back1)
+                        {
+                            Console.WriteLine("Mijoz");
+                            Console.WriteLine("1. Fastfoodlar");
+                            Console.WriteLine("2. Milliy taomlar");
+                            Console.WriteLine("3. Ichimliklar");
+                            Console.WriteLine("4. Salatlar");
+                            Console.WriteLine("5. Back");
+                            Console.Write("Tanlang: ");
+                            var choice1 = Console.ReadLine();
+                            Console.Clear();
+
+                            switch (choice1)
+                            {
+                                case "1":
+                                    center.ListFastfood();
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                case "2":
+                                    center.ListTaomlar();
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                case "3":
+                                    center.ListIchimlik();
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                case "4":
+                                    center.ListSalatlar();
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                case "5":
+                                    back1 = true;
+                                    Console.Clear();
+                                    break;
+                                default:
+                                    Console.WriteLine("Xato,qaytadan urinib ko`ring");
+                                    break;
+                            }
+                        }
+                        break;
+                    case "2":
+                        center.GetMenu();
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+                    case "3":
+                        break;
+                    case "4":
+                        back=true; Console.Clear();
+                        break;
+                    default:
+                        Console.WriteLine("Xato,qaytadan urinib ko`ring");
+                        break;
+                }
             }
         }
     }

@@ -59,7 +59,7 @@ public partial class Katigory
         fastfood = JsonReadFastfood();
         foreach (var fastfood in fastfood)
         {
-            Console.WriteLine($"Fastfood: {fastfood.Id}  , Name: {fastfood.Name}  , Narxi: {fastfood.Narxi}");
+            Console.WriteLine($"Fastfood: {fastfood.Id}  , Name: {fastfood.Name} ");
         }
     }
     public List<Fast_food> JsonReadFastfood()

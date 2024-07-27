@@ -58,7 +58,7 @@ public partial class Katigory
         salatlar = JsonReadSalatlar();
         foreach (var salat in salatlar)
         {
-            Console.WriteLine($"Salatlar: {salat.Id}  , Name: {salat.Name}  , Narxi: {salat.Narxi}");
+            Console.WriteLine($"Salatlar: {salat.Id}  , Name: {salat.Name}  ");
         }
     }
     public List<Salatlar> JsonReadSalatlar()

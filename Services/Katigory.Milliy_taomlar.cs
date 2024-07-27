@@ -58,7 +58,7 @@ public partial class Katigory
         taomlar = JsonReadTaomlar();
         foreach (var taom in taomlar)
         {
-            Console.WriteLine($"Taom: {taom.Id}  , Name: {taom.Name}  , Narxi: {taom.Narxi}");
+            Console.WriteLine($"Taom: {taom.Id}  , Name: {taom.Name}  ");
         }
     }
     public List<Milliy_taomlar> JsonReadTaomlar()

@@ -58,7 +58,7 @@ public partial class Katigory
         ichimlik = JsonReadIchimlik();
         foreach (var drink in ichimlik)
         {
-            Console.WriteLine($"Ichimlik: {drink.Id}  , Name: {drink.Name}  , Narxi: {drink.Narxi}");
+            Console.WriteLine($"Ichimlik: {drink.Id}  , Name: {drink.Name}  ");
         }
     }
     public List<Ichimliklar> JsonReadIchimlik()
